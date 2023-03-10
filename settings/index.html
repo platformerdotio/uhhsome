@@ -1,5 +1,15 @@
-<div class="buttons">
-    <input id="title" class="input" placeholder="Title" onkeyup="setTitle(this.value)">
-    <input id="icon" class="input" placeholder="Favicon" onkeyup="setFavicon(this.value.trim())">
-    <button class="button" onclick="resetTab()">Reset</button>
-  </div>
+<div id="popup-tab-cloaking">
+    <div id="pagecloak-text">
+        <h2 id="popup-tabcloaking-text">Tab Cloaking: </h2>
+    </div>
+<div id="pagecloak-interact">
+    <div id="pagecloak-interact-input">
+    <input id="tabcloak-input" placeholder="Icon URL/Title Here">
+    </div>
+<div id="tabcloak-buttons">
+    <button onclick="tabCloakTitle()" id="tabcloak-title" class="tabcloak-buttons">Title</button>
+    <button onclick="tabCloakIcon()" id="tabcloak-icon" class="tabcloak-buttons">Icon</button>
+    <button onclick="tabCloakReset()" id="tabcloak-reset" class="tabcloak-buttons">Reset</button>
+</div>
+</div>
+</div>
