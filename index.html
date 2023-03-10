@@ -12,24 +12,22 @@
     <!--<script src="script.js" defer></script>-->
   </head>
   <body>
-    <nav>
-      <div class="logo">Brand</div>
-      <input type="checkbox" id="click">
-      <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <ul>
-        <li><a class="active" href="https://platformerdotio.github.io/">Games</a></li>
+    <nav class="nav">
+      <i class="uil uil-bars navOpenBtn"></i>
+      <a href="#" class="logo">Platformer.io</a>
+
+      <ul class="nav-links">
+        <i class="uil uil-times navCloseBtn"></i>
+        <li><a href="https://platformerdotio.github.io">Games</a></li>
         <li><a href="/events">Events</a></li>
         <li><a href="/credits">Credits</a></li>
       </ul>
-    </nav>
-    <div class="content">
-      <iframe class="gameframe" src="/assets/gamepage/index.html"></iframe>
-    </div>
 
       
- 
+    </nav>
+    <div class="iframe">
+      <iframe class="gameframe" src="/assets/gamepage/index.html"></iframe>
+    </div>
   </body>
 </html>
 
@@ -37,121 +35,158 @@
   /* Google Fonts - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Space%20Grotesk:wght@300;400;500;600&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Space Grotesk';
-} 
-nav{
-  display: flex;
-  height: 80px;
+  font-family: "Space Grotesk";
+}
+body {
+  background: #1464b5;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  background: #0d1c8f;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 50px 0 100px;
-  flex-wrap: wrap;
+  padding: 15px 200px;
+  background: #4a98f7;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-nav .logo{
-  color: #fff;
-  font-size: 35px;
-  font-weight: 600;
-}
-nav ul{
+.nav,
+.nav .nav-links {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+}
+.nav {
+  justify-content: space-between;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.nav .logo {
+  font-size: 22px;
+  font-weight: 500;
+}
+.nav .nav-links {
+  column-gap: 20px;
   list-style: none;
 }
-nav ul li{
-  margin: 0 5px;
+.nav .nav-links a {
+  transition: all 0.2s linear;
 }
-nav ul li a{
-  color: #f2f2f2;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 15px;
-  border-radius: 5px;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
+.nav.openSearch .nav-links a {
+  opacity: 0;
+  pointer-events: none;
 }
-nav ul li a.active,
-nav ul li a:hover{
-  color: #0d1c8f;
-  background: #fff;
-}
-nav .menu-btn i{
+.nav .search-icon {
   color: #fff;
-  font-size: 22px;
+  font-size: 20px;
   cursor: pointer;
-  display: none;
 }
-input[type="checkbox"]{
-  display: none;
-}
-@media (max-width: 1000px){
-  nav{
-    padding: 0 40px 0 50px;
-  }
-}
-@media (max-width: 920px) {
-  nav .menu-btn i{
-    display: block;
-  }
-  #click:checked ~ .menu-btn i:before{
-    content: "\f00d";
-  }
-  nav ul{
-    position: fixed;
-    top: 80px;
-    left: -100%;
-    background: #0d1c8f;
-    height: 100vh;
-    width: 100%;
-    text-align: center;
-    display: block;
-    transition: all 0.3s ease;
-  }
-  #click:checked ~ ul{
-    left: 0;
-  }
-  nav ul li{
-    width: 100%;
-    margin: 40px 0;
-  }
-  nav ul li a{
-    width: 100%;
-    margin-left: -100%;
-    display: block;
-    font-size: 20px;
-    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  #click:checked ~ ul li a{
-    margin-left: 0px;
-  }
-  nav ul li a.active,
-  nav ul li a:hover{
-    background: none;
-    color: cyan;
-  }
-}
-.content{
+.nav .search-box {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: -1;
+  right: 250px;
+  height: 45px;
+  max-width: 555px;
   width: 100%;
-  padding: 0 30px;
-  color: #0d1c8f;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s linear;
 }
-.content div{
-  font-size: 40px;
-  font-weight: 700;
+.nav.openSearch .search-box {
+  opacity: 1;
+  pointer-events: auto;
+}
+.search-box .search-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  left: 15px;
+  color: #4a98f7;
+  transform: translateY(-50%);
+}
+.search-box input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 0 15px 0 45px;
 }
 
+.nav .navOpenBtn,
+.nav .navCloseBtn {
+  display: none;
+}
+
+/* responsive */
+@media screen and (max-width: 1160px) {
+  .nav {
+    padding: 15px 100px;
+  }
+  .nav .search-box {
+    right: 150px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .nav {
+    padding: 15px 50px;
+  }
+  .nav .search-box {
+    right: 100px;
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav .navOpenBtn,
+  .nav .navCloseBtn {
+    display: block;
+  }
+  .nav {
+    padding: 15px 20px;
+  }
+  .nav .nav-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    max-width: 280px;
+    width: 100%;
+    padding-top: 100px;
+    row-gap: 30px;
+    flex-direction: column;
+    background-color: #11101d;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    z-index: 100;
+  }
+  .nav.openNav .nav-links {
+    left: 0;
+  }
+  .nav .navOpenBtn {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .nav .navCloseBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .nav .search-box {
+    top: calc(100% + 10px);
+    max-width: calc(100% - 20px);
+    right: 50%;
+    transform: translateX(50%);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+}
 .gameframe {
   width: 100%;
   margin-top: 55px;
