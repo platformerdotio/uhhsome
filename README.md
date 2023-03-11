@@ -4,4 +4,5 @@
 </kbd>
 <h1 align = "center" >Platformer.io</h1>
 This is the best games site on the planet Mars. If you have any questions/comments, DM me at `SmartFolio#5139`! If you host this site, PLEASE make sure to give us credit. For most times, ONLY trust the official link! (https://platformerdotio.github.io/)
+(This is a just prototype)
 
