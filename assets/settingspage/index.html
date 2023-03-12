@@ -3,6 +3,7 @@
 <body>
   <div class="buttons">
     <h1>Disguised Version</h1>
+	  <p> </p>
     <button onclick="openGame()" class="button-29" role="button">Disguised Version</button>
     
   </div>
@@ -102,6 +103,11 @@ function openGame() {
 	iframe.style.width = "100%"
 	iframe.style.height = "100%"
 	iframe.style.border = "none"
+	iframe.style.margin = "0"
+	iframe.style.top = "0"
+	iframe.style.bottom = "0"
+	iframe.style.left = "0"
+	iframe.style.right = "0"
 	iframe.src = url
 	win.document.body.appendChild(iframe)
 }
