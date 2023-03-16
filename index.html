@@ -1,28 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <html lang="en" dir="ltr">
+    <head>
+    <meta charset="utf-8">
+   <!--------- <title>Responsive Navigation Menu</title>------>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--<title>Navigation Bar with Search Box</title>-->
     <title>Platformer.io</title>
     <!-- Unicons CSS -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
     <link rel="icon" type="image/png" href="https://img.genial.ly/6376f7d5e7bb19001319e686/17dd15a5-ae23-4f59-af79-e503f8f94e09.png">
     <!--<script src="script.js" defer></script>-->
   </head>
   <body>
-    <nav class="nav">
-      <i class="uil uil-bars navOpenBtn"></i>
-      <a href="#" class="logo">Platformer.io</a>
-
-      <ul class="nav-links">
-        <i class="uil uil-times navCloseBtn"></i>
-        <li><a href="https://platformerdotio.github.io">Games</a></li>
-        <li><a href="/events">Events</a></li>
-        <li><a href="/credits">Credits</a></li>
-        <li><a href="/settings">Settings</a></li>
+   <nav>
+      <div class="logo">Brand</div>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Feedback</a></li>
       </ul>
+    </nav>
 
       
     </nav>
