@@ -1,13 +1,16 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Space%20Grotesk:wght@500&display=swap");
+.credit {
+  font-family: "Space Grotesk";
+  text-align: center;
+}
 body {
+  font-family: "Space Grotesk";
   background-color: black;
   color: white;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Space%20Grotesk:wght@500&display=swap");
-.credit {
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-}
 a {
   color: #4287f5;
 }
