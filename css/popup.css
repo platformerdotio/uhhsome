@@ -65,10 +65,9 @@ header h2 {
   border-radius: 4px;
   background: #4070f4;
   cursor: pointer;
-  width: 100%
+  width: 100%;
   transition: all 0.2s ease;
-  #calc(100% / 2 - 10px)
-  
+
 }
 .buttons #acceptBtn:hover {
   background-color: #034bf1;
