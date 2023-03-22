@@ -4,4 +4,5 @@
   height: 200vh;
   border: none;
   display: block;
+  overflow: auto;
 }
