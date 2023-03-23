@@ -1,11 +1,91 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Platformer.io | Bank Robbery</title>
-  <link rel="icon" type="image/png" href="https://img.genial.ly/6376f7d5e7bb19001319e686/17dd15a5-ae23-4f59-af79-e503f8f94e09.png" />
-</head>
-<body>
-<iframe src="https://tgcofficial.github.io/tgc-assets/bank-robbery/" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
-</iframe>
-</body>
-</html>
+<html lang="en-us"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>BankRobbery</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+  <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js" id="gdsdk_google_analytics"></script><script type="text/javascript" async="" crossorigin="anonymous" data-ad-client="ca-pub-2316275586951220" data-ad-frequency-hint="30s" allow="autoplay" data-ad-channel="4089988593" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" id="afg"></script><script type="text/javascript" async="" src="https://hb.improvedigital.com/pbw/headerlift.min.js?referer=y8.com" id="gdsdk_prebid"></script></head>
+  <body class="dark" data-new-gr-c-s-check-loaded="14.1101.0" data-gr-ext-installed="">
+    <div id="unity-container" class="unity-desktop">
+      <canvas id="unity-canvas" width="2010" height="1336" style="cursor: default;"></canvas>
+    </div>
+    <div id="loading-cover" style="display: none;">
+      <div id="unity-loading-bar">
+        <div id="unity-logo"><img src="logo.png"></div>
+        <div id="unity-progress-bar-empty" style="">
+          <div id="unity-progress-bar-full" style="width: 100%;"></div>
+        </div>
+        <div class="spinner" style="display: none;"></div>
+      </div>
+    </div>
+    <div id="unity-fullscreen-button" style="display: none;"></div>
+    <script id="gamedistribution-jssdk" src="//html5.api.gamedistribution.com/main.min.js"></script><script>
+      const hideFullScreenButton = "1";
+      const buildUrl = "Build";
+      const loaderUrl = buildUrl + "/BankRobbery.loader.js";
+      const config = {
+        dataUrl: buildUrl + "/BankRobbery.data.unityweb",
+        frameworkUrl: buildUrl + "/BankRobbery.framework.js.unityweb",
+        codeUrl: buildUrl + "/BankRobbery.wasm.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "JustAlien",
+        productName: "BankRobbery",
+        productVersion: "1.0",
+      };
+
+      const container = document.querySelector("#unity-container");
+      const canvas = document.querySelector("#unity-canvas");
+      const loadingCover = document.querySelector("#loading-cover");
+      const progressBarEmpty = document.querySelector("#unity-progress-bar-empty");
+      const progressBarFull = document.querySelector("#unity-progress-bar-full");
+      const fullscreenButton = document.querySelector("#unity-fullscreen-button");
+      const spinner = document.querySelector('.spinner');
+
+      const canFullscreen = (function() {
+        for (const key of [
+            'exitFullscreen',
+            'webkitExitFullscreen',
+            'webkitCancelFullScreen',
+            'mozCancelFullScreen',
+            'msExitFullscreen',
+          ]) {
+          if (key in document) {
+            return true;
+          }
+        }
+        return false;
+      }());
+
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        container.className = "unity-mobile";
+        config.devicePixelRatio = 1;
+      }
+      loadingCover.style.display = "";
+
+      const script = document.createElement("script");
+      script.src = loaderUrl;
+      script.onload = () => {
+        createUnityInstance(canvas, config, (progress) => {
+          spinner.style.display = "none";
+          progressBarEmpty.style.display = "";
+          progressBarFull.style.width = `${100 * progress}%`;
+        }).then((unityInstance) => {
+          loadingCover.style.display = "none";
+          if (canFullscreen) {
+            if (!hideFullScreenButton) {
+              fullscreenButton.style.display = "";
+            }
+            fullscreenButton.onclick = () => {
+              unityInstance.SetFullscreen(1);
+            };
+          }
+        }).catch((message) => {
+          alert(message);
+        });
+      };
+      document.body.appendChild(script);
+    </script><script src="Build/BankRobbery.loader.js"></script>
+  
+
+<script src="blob:https://html5.gamedistribution.com/d3710b41-04d5-44c7-9e33-48b012045dcf"></script></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
