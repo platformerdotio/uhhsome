@@ -1,110 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8">
-    <title>Stickman Hook</title>
-    <script>
-        var mpConfig = {
-            "game": "stickman-hook",
-            "partner": "miniplay"
-        };
-    </script>
-    <script src="https://ext.minijuegosgratis.com/external-host/main.js"></script>
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
-
-    <style>
-        html,
-        body {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            margin: 0;
-            padding: 0;
-            border: 0;
-            overflow: hidden;
-            width: 100%;
-            height: 100%;
-            background-color: black;
-        }
-
-        canvas {
-            width: 100%;
-        }
-
-        .shopbutton,
-        .shop-button {
-            display: none !important;
-        }
-    </style>
-
-    <!-- Poki SDK -->
-    <script src="bundles.js"></script>
-    
+  <title>Platformer.io | Stickman Hook</title>
+  <link rel="icon" type="image/png" href="https://play-lh.googleusercontent.com/TeQcfN2P0v_9WUxZm_8TC6dA5nlzUUcykCEyZlSWO8GS9G-jTy8wbnZo2K3oChh-d1o" />
 </head>
-
 <body>
-
-    <script src="bundle.js"></script>
-
-    <style>
-        body,
-        html {
-            margin: 0 auto;
-            padding: 0 auto;
-            width: 100%;
-            height: 100%;
-            overflow: hidden
-        }
-
-        #adsbox {
-            position: fixed;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: 999;
-            display: none;
-        }
-    </style>
-
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-  
-    <div id="adsbox" style="display: none;"></div>
-
-
-
- 
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'UA-81855592-1');
-
-        if (YaGames) {
-            YaGames.init({
-                screen: {
-                    fullscreen: false
-                },
-                yandexApp: {
-                    enabled: true
-                },
-                adv: {
-                    onAdvClose: wasShown => {
-                        //cr_setSuspended(false);
-                    }
-                }
-            }).then(function(ysdk) {
-                window.ysdk = ysdk;
-            });
-        }
-
-        function ShowYaBanner() {}
-    </script>
-
+<iframe src="https://platformerio.netlify.app/projects/stickman-hook/index.html" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
+</iframe>
 </body>
-
 </html>
