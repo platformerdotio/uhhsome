@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Space%20Grotesk:wght@200;300;400;500;600&display=swap');
+
+* {
+	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Grotesk';
+}
+
+body {
+	background-color: #EDEEF6;
+	font-family: 'Space Grotesk';
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+button {
+	background-color: #47A386;
+	border: 0;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	color: #fff;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px 25px;
+}
+
+.modal-container {
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	transition: opacity 0.3s ease;
+	pointer-events: none;
+}
+
+.modal-container.show {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.modal {
+	background-color: #03172a;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	padding: 30px 50px;
+	text-align: center;
+	width: 600px;
+	max-width: 100%;
+/* 	transform: translateY(-200%); */
+/* 	transition: transform 0.3s ease; */
+}
+
+.modal-container.show .modal {
+/* 	transform: translateY(0); */
+}
+
+.modal h1 {
+	margin: 0;
+}
+
+.modal p {
+	font-size: 14px;
+	opacity: 0.7;
+}
+
+::placeholder {
+  color: #fff;
+}
+.modal-container .search-box{
+    position: relative;
+    height: 42px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.search-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #5d6ab3;
+    padding: 0 15px 0 45px;
+    color: #fff;
+    border-radius: 21px;
+}
+.search-box i{
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    top: 50%;
+    left: 15px;
+    font-size: 20px;
+    transform: translateY(-50%);
+}
+.games{
+  text-align: center;
+}
+.li, ul{
+  list-style-type: none;
+  list-style: none;
+  color: #ffffff;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+
