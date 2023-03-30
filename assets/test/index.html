@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/200vh.css">
+    <title>Platformer.io</title>
+    <link rel="icon" href="/favicon.png" type="image/x-icon"/>
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z9RLZJKKEF"></script>
+    <link rel="stylesheet" type="text/css" href="/css/searchbar.css">
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z9RLZJKKEF');
+</script>
+   </head>
+  
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <a href="/index.html"><img src="https://img.genial.ly/6376f7d5e7bb19001319e686/17dd15a5-ae23-4f59-af79-e503f8f94e09.png" alt="hello" width="50" height="50"></a>
+    </div>
+    <ul class="nav-list">
+      <li id="open">
+          <i class='bx bx-search'></i>
+          <span class="links_name">Search</span>
+         <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="https://platformerdotio.github.io/">
+          <i class='bx bxs-game'></i>
+          <span class="links_name">Games</span>
+        </a>
+         <span class="tooltip">Games</span>
+      </li>
+      <li>
+       <a href="/events">
+         <i class='bx bxs-calendar-event' ></i>
+         <span class="links_name">Events</span>
+       </a>
+       <span class="tooltip">Events</span>
+     </li>
+     <li>
+       <a href="/credits">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">Credits</span>
+       </a>
+       <span class="tooltip">Credits</span>
+     </li>
+     <li>
+       <a href="/extras">
+         <i class='bx bxs-plus-circle'></i>
+         <span class="links_name">Extras</span>
+       </a>
+       <span class="tooltip">Extras</span>
+     </li>
+     <li>
+       <a href="https://discord.gg/ge4mnmAVnv">
+         <i class='bx bxl-discord' ></i>
+         <span class="links_name">Discord</span>
+       </a>
+       <span class="tooltip">Discord</span>
+     </li>
+    </ul>
+  </div>
+  <section class="home-section">
+     <iframe class="gameframe" src="/assets/gamepage">
+  </section>
+  <script src="/js/sidebar.js"></script>
+  <script src="/js/searchbar.js"></script>
+    
+  <div class="modal-container" id="modal_container">
+	<div class="modal">
+		<div class="search-box">
+            <i class="bx bx-search"></i>
+            <input id="searchbar" type="text" onkeyup="search_game()" placeholder="Search for a game" name="search">
+        </div>
+      
+    
+      
+    <!-- ordered list -->
+    <ul id='list'>
+      <a href="/games/10-minutes-till-dawn" style="color:#fff;"><li class="games">10 Minutes Till Dawn</li></a>
+      <a href="/games/2048-cupcakes" style="color:#fff;"><li class="games">2048 Cupcakes</li></a>
+      <a href="/games/2048" style="color:#fff;"><li class="games">2048</li></a>
+      <a href="/games/awesome-tanks-2" style="color:#fff;"><li class="games">Awesome Tanks 2</li></a>
+      <a href="/games/awesome-tanks" style="color:#fff;"><li class="games">Awesome Tanks </li></a>
+      <a href="/games/backrooms" style="color:#fff;"><li class="games">Backrooms</li></a>
+      <a href="/games/bad-ice-cream" style="color:#fff;"><li class="games">Bad Ice Cream</li></a>
+      <a href="/games/basket-bros-io" style="color:#fff;"><li class="games">Basket Bros</li></a>
+      <a href="/games/basket-random" style="color:#fff;"><li class="games">Basket Random</li></a>
+      <a href="/games/basketball-stars" style="color:#fff;"><li class="games">Basketball Stars</li></a>
+      
+        
+    </ul>
+		<button id="close">
+			Close
+		</button>
+	</div>
+</div>
+  
+</body>
+</html>
