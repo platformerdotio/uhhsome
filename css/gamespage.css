@@ -1134,7 +1134,7 @@ body{
     align-items:center;
     position:fixed;
     z-index:100003;
-    top:16px;
+    top:30px;
     background:#fff;
     box-shadow:var(--navShadow);
     border-radius:16px;
