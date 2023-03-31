@@ -1,0 +1,9 @@
+.gameframe{
+    width: 100%;
+    margin: 0px;
+    height: 120vh;
+    border: none;
+    display: block;
+    overflow: auto;
+  }
+  
