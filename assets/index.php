@@ -7,7 +7,7 @@
     <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css'>
 
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="style.css">
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#config-web-app -->
@@ -79,7 +79,7 @@
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js'></script>
 
-        <script src="js/index.js?v=<?= time(); ?>"></script>
+        <script src="index.js?v=<?= time(); ?>"></script>
 
 <style>
     .fixed-bottom {
