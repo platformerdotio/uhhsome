@@ -417,7 +417,7 @@ body{
     left:0;
     padding:6px;
     color:#fff;
-    font:700 var(--fontSize)/var(--lineHeight) 'Proxima Nova',sans-serif;
+    font:700 var(--fontSize)/var(--lineHeight) 'Space Grotesk';
     text-align:center;
     z-index:5;
     transition:transform .3s var(--bezier) .1s,opacity .3s var(--bezier) .1s;
