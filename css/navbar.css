@@ -13,7 +13,7 @@
 
 /* ===== Colours ===== */
 :root{
-    --body-color: #4064cf;
+    --body-color: #1b7cd0;
     --nav-color: #0c58f0;
     --side-nav: #010718;
     --text-color: #FFF;
@@ -27,7 +27,7 @@ body{
 }
 
 body.dark{
-    --body-color: #062542;
+    --body-color: #010406;
     --nav-color: #03172a;
     --side-nav: #03101c;
     --text-color: #CCC;
