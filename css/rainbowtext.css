@@ -9,6 +9,7 @@ h1 {
     font-family: 'Space Grotesk';
     text-align: center;
     font-size: 50px;
+    line-height: 2.5;
 
 
     -webkit-animation: rainbowanim 10s ease infinite;
