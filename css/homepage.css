@@ -9,10 +9,6 @@
   align-items: center;
   justify-content: center;
 }
-::selection{
-  color: #000;
-  background: #fff;
-}
 .img{
   background: url('/sunset.jpeg')no-repeat;
   width: 100%;
