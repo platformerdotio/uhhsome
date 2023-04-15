@@ -1,108 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Space%20Grotesk:ital,wght@0,600;0,700;1,400&display=swap");
+
+:root {
+  --extra-light: #f3f4f6;
+}
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: "ubuntu";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-img {
-    width: 100%;
+
+a {
+  text-decoration: none;
 }
+
+body {
+  font-family: "Space Grotesk";
+  height: 100vh;
+  background-image: url("assets/bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 header {
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 50px;
-    background: #0b2239;
+  position: relative;
+  padding: 0 2rem;
 }
-header .header-left {
-    display: flex;
-    align-items: center;
+
+nav {
+  height: 80px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
-header .header-left .logo {
-    width: 140px;
+
+.nav__logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--extra-light);
 }
-header .header-left nav {
-    margin-left: 50px;
+
+.nav__links {
+  position: absolute;
+  right: 0;
+  top: 80px;
+  width: 100%;
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
 }
-header .header-left nav ul {
-    display: flex;
+
+.open {
+  display: flex;
 }
-nav ul li a {
-    display: block;
-    color: #cfd9e0;
-    font-size: 18px;
-    padding: 5px 10px;
-    transition: 0.2s;
+
+.nav__links .link {
+  font-size: 1.25rem;
+  color: var(--extra-light);
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
 }
-nav ul li a:hover,
-nav ul li a.active {
-    color: #fff;
+
+.nav__links .link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
-nav .login-signup {
+
+.toggle__btn {
+  display: block;
+  color: var(--extra-light);
+  font-size: 2rem;
+}
+
+.hero {
+  max-width: 1200px;
+  height: calc(100vh - 80px);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--extra-light);
+}
+
+.hero h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1rem;
+}
+
+.hero h1 {
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+.hero button {
+  width: 150px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+}
+
+@media screen and (min-width: 640px) {
+  .nav__links {
+    width: 250px;
+  }
+
+  .hero {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav__links {
+    position: unset;
+    width: unset;
+    flex-direction: row;
+    gap: 0.5rem;
+    display: flex !important;
+    background: transparent;
+  }
+
+  .toggle__btn {
     display: none;
-}
-header .header-right {
-    display: flex;
-    align-items: center;
-}
-header .login-signup {
-    color: #cfd9e0;
-    font-weight: bold;
-}
-header .login-signup a {
-    display: inline-block;
-    color: #0b2239;
-    background: #4ad295;
-    padding: 5px 12px;
-    border-radius: 5px;
-}
-header .header-right .hamburger {
-    margin-left: 20px;
-    cursor: pointer;
-    display: none;
-}
-header .header-right .hamburger div {
-    width: 30px;
-    height: 2px;
-    margin: 6px 0;
-    background: #fff;
-}
-@media only screen and (max-width: 1000px) {
-    header {
-        padding: 0 20px;
-    }
-    header .header-right .hamburger {
-        display: block;
-    }
-    header .header-left nav {
-        margin: 0;
-        position: absolute;
-        top: -100%;
-        left: 0;
-        width: 100%;
-        height: fit-content;
-        background-color: #0b2239;
-        padding: 30px;
-        transition: 0.3s;
-        text-align: center;
-        z-index: -1;
-    }
-    header .header-left nav.active {
-        top: 70px;
-    }
-    header .header-left nav ul {
-        display: block;
-    }
-}
-@media only screen and (max-width: 500px) {
-    nav .login-signup {
-        display: block;
-        margin-top: 20px;
-    }
-    header .header-right .login-signup {
-        display: none;
-    }
+  }
+
+  .hero h2 {
+    font-size: 4rem;
+  }
+
+  .hero h1 {
+    font-size: 8rem;
+  }
+
+  .hero button {
+    width: 200px;
+    padding: 1rem;
+  }
 }

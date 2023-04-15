@@ -1,58 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar using HTML, CSS and Javascript</title>
-    <link rel="stylesheet" href="/css/navbartop.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/navbartop.css" />
+    <title>Web Design Mastery | Responsive Navigation Bar</title>
+  </head>
+  <body>
     <header>
-        <div class="header-left">
-            <div class="logo">
-                <img src="./logo.png" alt="">
-            </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="" class="active">Home</a>
-                    </li>
-                    <li>
-                        <a href="">Products</a>
-                    </li>
-                    <li>
-                        <a href="">Pricing</a>
-                    </li>
-                    <li>
-                        <a href="">About</a>
-                    </li>
-                    <li>
-                        <a href="">Say, hi - info@virus.com</a>
-                    </li>
-                </ul>
-                <div class="login-signup">
-                    <a href="">Login</a> or <a href="">Signup</a>
-                </div>
-            </nav>
+      <nav>
+        <div class="nav__logo"><a href="#">Web Design Mastery</a></div>
+        <ul class="nav__links">
+          <li class="link">Home</li>
+          <li class="link">About</li>
+          <li class="link">Service</li>
+          <li class="link">Blog</li>
+          <li class="link">Contact</li>
+        </ul>
+        <div class="toggle__btn">
+          <i class="ri-menu-line"></i>
         </div>
-        <div class="header-right">
-            <div class="login-signup">
-                <a href="">Login</a> or <a href="">Signup</a>
-            </div>
-            <div class="hamburger">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
+      </nav>
+      <div class="hero">
+        <h2>ENJOY THE</h2>
+        <h1>WORLD</h1>
+        <button>Explore Now</button>
+      </div>
     </header>
+
     <script>
-        hamburger = document.querySelector(".hamburger");
-        nav = document.querySelector("nav");
-        hamburger.onclick = function() {
-            nav.classList.toggle("active");
-        }
+      const toggleBtn = document.querySelector(".toggle__btn");
+      const toggleBtnIcon = document.querySelector(".toggle__btn i");
+      const menu = document.querySelector(".nav__links");
+
+      toggleBtn.onclick = function () {
+        menu.classList.toggle("open");
+        const isOpen = menu.classList.contains("open");
+
+        toggleBtnIcon.classList = isOpen ? "ri-close-line" : "ri-menu-line";
+      };
     </script>
-</body>
+  </body>
 </html>
