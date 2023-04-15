@@ -52,7 +52,7 @@ body.dark nav{
 nav .nav-bar{
     position: relative;
     height: 100%;
-    max-width: 1150px;
+    max-width: 1500px;
     width: 100%;
     background-color: var(--nav-color);
     margin: 0 auto;
@@ -75,6 +75,7 @@ nav .nav-bar .logo a{
     font-weight: 500;
     color: var(--text-color);
     text-decoration: none;
+    padding-left: 50px;
 }
 
 .menu .logo-toggle{
