@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<!-- === Coding by CodingLab | www.codinglabweb.com === -->
-<html lang="en">
-<head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z9RLZJKKEF"></script>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/100vh.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z9RLZJKKEF"></script>
+    <title>Platformer.io</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -11,62 +16,22 @@
 
     gtag('config', 'G-Z9RLZJKKEF');
 </script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
-    <link rel="stylesheet" href="/css/navbar.css">
-    <link rel="stylesheet" href="/css/100vh.css">
-    <!-- ===== Boxicons CSS ===== -->
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <title>Platformer.io</title>
-    <link rel="icon" type="image/png" href="https://img.genial.ly/6376f7d5e7bb19001319e686/17dd15a5-ae23-4f59-af79-e503f8f94e09.png">
-    <!--<title>Responsive Navigation Menu Bar</title>-->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z9RLZJKKEF"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-Z9RLZJKKEF');
-    </script>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <div class="nav-bar">
-            <i class='bx bx-menu sidebarOpen' ></i>
-            <span class="logo navLogo"><a href="https://platformerdotio.github.io/">Platformer.io</a></span>
-
-            <div class="menu">
-                <div class="logo-toggle">
-                    <span class="logo"><a href="https://platformerdotio.github.io/">Platformer.io</a></span>
-                    <i class='bx bx-x siderbarClose'></i>
-                </div>
-
-                <ul class="nav-links">
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/games/">Games</a></li>
-                    <li><a href="/credits/">Credits</a></li>
-                    <li><a href="/extras/">Extras</a></li>
-                    
-                </ul>
-            </div>
-
-            <div class="darkLight-searchBox">
-                <div class="dark-light">
-                    <i class='bx bx-moon moon'></i>
-                    <i class='bx bx-sun sun'></i>
-                </div>
-
-        
-            </div>
-        </div>
+      <a href="/index.html"><div class="logo">Platformer.io</div></a>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="/index.html">Home</a></li>
+        <li><a href="/games">Games</a></li>
+        <li><a href="/credits">Credits</a></li>
+        <li><a href="/extras">Extras</a></li>
+      </ul>
     </nav>
-    
-<div class="content">
-        <iframe class="gameframe" src="/assets/extraspage/index.html"></iframe>
-    </div>  
-<script src="/js/navbar.js"></script>  
-</body>
+    <div class="content">
+      <iframe class="gameframe" src="/assets/extraspage/"></iframe>
+  </body>
 </html>
-
-
