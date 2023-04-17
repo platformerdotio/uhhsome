@@ -139,9 +139,9 @@ body{
 }
 
 .game-stuff {
-  margin: 5% 0;
+  margin: 50px;
   padding: 2rem;
-  background-color: var(--ubg);
+  background-color: var(--proformer);
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 12px 0px;
 }
