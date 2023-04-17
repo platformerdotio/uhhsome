@@ -146,6 +146,7 @@ body{
 
 .fa-2x {
   background: #5ff5f5;
+  transition: all .2s ease-in-out; 
 }
 
 .description-container {

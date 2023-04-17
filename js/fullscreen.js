@@ -54,7 +54,7 @@ const buildimgcontainer = (games) => {
 
   const $imgtag = document.createElement("img"); //create the img tag
   $imgtag.classList.add("hover-center");
-  $imgtag.src = "/assets/img/games/" + games.imgsrc;
+  $imgtag.src = "/image/" + games.imgsrc;
   $imgtag.alt = games.name; //alt is the same as the game's name
 
   $anchor.appendChild($imgtag);
