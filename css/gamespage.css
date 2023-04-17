@@ -15,6 +15,7 @@ body{
 	color: #03172a;
 	overflow-x: hidden;
 	letter-spacing: 0.2px;
+  background: #02225d;
 	-webkit-transition: all 200ms linear;
 	transition: all 200ms linear; 
 	text-rendering: optimizeLegibility;
