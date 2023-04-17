@@ -24,12 +24,6 @@ body{
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	scroll-behavior: smooth;
-
-  	/* Create the parallax scrolling effect */
-  	background: url("/assets/img/bg.svg");
- 	background-attachment: fixed;
- 	background-position: center;
-  	background-repeat: repeat;
 }
 
 :root {
