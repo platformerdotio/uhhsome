@@ -147,3 +147,11 @@ body{
 #content-stuff {
   color: var(--game-stuff);
 }
+
+h1{
+  background: #5ff5f5
+}
+
+p{
+  background: #5ff5f5
+}
