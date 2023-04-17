@@ -1,7 +1,7 @@
 /* =================== Import + Root =================== */
-@import url('https://fonts.googleapis.com/css?family=DM%20Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Varela%20Round:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 :root{
-	--ubg: #3c6645;
+	--ubg: #5ff5f5;
 }
 
 /* =================== Main =================== */
@@ -12,11 +12,11 @@
   	background: #02225D;
 }
 body{
-	font-family: 'DM Sans', sans-serif;
+	font-family: 'Varela Round';
 	font-weight: 500;
 	font-size: 15px;
 	line-height: 1.7;
-	color: #FFFFFF;
+	color: #02225d;
 	overflow-x: hidden;
 	letter-spacing: 0.2px;
 	-webkit-transition: all 200ms linear;
@@ -118,14 +118,14 @@ body{
 }
 
 .bar h1{
-  font-size: 24px;
-  background: #3c6645;
+  font-size: 20px;
+  background: #5ff5f5;
 }
 
 #content-creator {
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: 600;
-  background: #3c6645;
+  background: #5ff5f5;
 }
 
 #content-desc {
@@ -139,11 +139,11 @@ body{
 
 .gameframe {
   height: 80vh;
-  border: 3px solid #3c6645;
+  border: 3px solid #5ff5f5;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 
 .fa-2x {
-  background: #3c6645;
+  background: #5ff5f5;
 }
