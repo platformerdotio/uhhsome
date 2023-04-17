@@ -20,6 +20,7 @@ body{
 	transition: all 200ms linear; 
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
+  margin-bottom: 100px;
 }
   	
 /* =================== Games =================== */
