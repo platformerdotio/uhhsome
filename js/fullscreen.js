@@ -1,10 +1,6 @@
 
-let url = window.location.pathname; //get path
-/*let urlsub = "";
-if (urlstring.indexOf("html") > -1) {
-//Check of html String in URL.
-urlsub = urlstring.substring(1, urlstring.lastIndexOf("."));
-}*/
+let url = window.location.pathname;
+
 let pageurl = "";
 
 if (url.indexOf("html") > -1) {
@@ -13,7 +9,6 @@ if (url.indexOf("html") > -1) {
   pageurl = url.substring(url.lastIndexOf("/") + 1, url.length);
 }
 
-//if we find a match for the element, create the info
 try {
   const found = gamesArr.find((element) => element.link == pageurl);
 
@@ -46,16 +41,16 @@ const buildogDiv = (games) => {
 };
 
 const buildimgcontainer = (games) => {
-  const $imgcontainer = document.createElement("div"); //create div imagecontainer
+  const $imgcontainer = document.createElement("div"); 
   $imgcontainer.classList.add("img-container");
 
-  const $anchor = document.createElement("a"); //create anchor tag inside that
+  const $anchor = document.createElement("a"); 
   $anchor.href = "/" + games.link + ".html";
 
-  const $imgtag = document.createElement("img"); //create the img tag
+  const $imgtag = document.createElement("img"); 
   $imgtag.classList.add("hover-center");
   $imgtag.src = "/image/" + games.imgsrc;
-  $imgtag.alt = games.name; //alt is the same as the game's name
+  $imgtag.alt = games.name; 
 
   $anchor.appendChild($imgtag);
   $imgcontainer.appendChild($anchor);
@@ -64,14 +59,14 @@ const buildimgcontainer = (games) => {
 };
 
 const buildgridcardtext = (games) => {
-  const $gridcardtext = document.createElement("div"); //create div gridcardtext
+  const $gridcardtext = document.createElement("div"); 
   $gridcardtext.classList.add("grid-card-text");
 
-  const $p = document.createElement("p"); //create the p tag
+  const $p = document.createElement("p"); 
   $p.classList.add("game-name");
-  $p.innerText = games.name; //set the title
+  $p.innerText = games.name; 
 
-  const $h1 = document.createElement("h1"); //create h1 tag inside that
+  const $h1 = document.createElement("h1"); 
   $h1.classList.add("game-developer");
   $h1.innerText = "by " + games.developer;
 
@@ -81,7 +76,6 @@ const buildgridcardtext = (games) => {
   return $gridcardtext;
 };
 
-//# of elements for other games
 
 const randomGame = () => {
   setTimeout(() => {
@@ -97,14 +91,14 @@ const randomGame = () => {
     }
     const set = new Set();
     while (set.size < elemCount) {
-      set.add(Math.floor(Math.random() * gamesArr.length)); //add 5 random numbers to the set
+      set.add(Math.floor(Math.random() * gamesArr.length)); 
     }
 
     const ogwrap = document.querySelector(".og-wrap");
 
-    let ind = set.values(); //set of 5 random numbers w/o dupes
+    let ind = set.values(); 
     for (let i = 0; i < elemCount; i++) {
-      let randInd = ind.next().value; //get each value from the set
+      let randInd = ind.next().value; 
       let $item = buildogDiv(gamesArr[randInd]);
       ogwrap.appendChild($item);
     }
