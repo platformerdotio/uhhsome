@@ -1,10 +1,9 @@
-/* =================== Import + Root =================== */
 @import url('https://fonts.googleapis.com/css?family=Varela%20Round:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 :root{
-	--ubg: #5ff5f5;
+	--proformer: #5ff5f5;
+  --desc: #f1f1f1;
 }
 
-/* =================== Main =================== */
 * {
     margin: 0;
     padding: 0;
@@ -26,11 +25,7 @@ body{
 	scroll-behavior: smooth;
 }
 
-:root {
-  --desc: #f1f1f1;
-}
 
-/* =================== Content =================== */
 .content-wrapper {
   margin: 15vh auto 0;
   width: 1366px;
@@ -86,7 +81,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--ubg);
+  background-color: var(--proformer);
   padding: 0.2rem 2rem 0.75rem;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -141,4 +136,12 @@ body{
 .fa-2x {
   background: #5ff5f5;
   transition: all .2s ease-in-out; 
+}
+
+.game-stuff {
+  margin: 5% 0;
+  padding: 2rem;
+  background-color: var(--ubg);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 12px 0px;
 }
