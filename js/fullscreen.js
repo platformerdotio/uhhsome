@@ -1,3 +1,4 @@
+
 let url = window.location.pathname; //get path
 /*let urlsub = "";
 if (urlstring.indexOf("html") > -1) {
