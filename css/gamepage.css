@@ -149,7 +149,9 @@ body{
 }
 
 .description-container {
-  background: #5ff5f5;
-  border-radius: 20px;
-  margin: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--ubg);
+  padding: 0.2rem 2rem 0.75rem;
 }
