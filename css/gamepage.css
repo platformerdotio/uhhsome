@@ -142,11 +142,3 @@ body{
   background: #5ff5f5;
   transition: all .2s ease-in-out; 
 }
-
-.description-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--ubg);
-  padding: 0.2rem 2rem 0.75rem;
-}
