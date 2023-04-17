@@ -147,3 +147,9 @@ body{
 .fa-2x {
   background: #5ff5f5;
 }
+
+.description-container {
+  background: #5ff5f5;
+  border-radius: 20px;
+  margin: 50px;
+}
