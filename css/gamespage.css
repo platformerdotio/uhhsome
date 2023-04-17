@@ -19,13 +19,13 @@ body{
 	transition: all 200ms linear; 
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
+}
   	
 /* =================== Games =================== */
 
 .games-wrapper{
     display: grid;
     max-width: 100%;
-    grid-template-columns: 0.5fr 2fr 0.5fr;
     margin-bottom: 5%;
 }
 
