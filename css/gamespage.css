@@ -10,16 +10,15 @@ body{
 	font-family: 'DM Sans', sans-serif;
 	font-weight: 500;
 	font-size: 15px;
-  text-align: center;
+  	text-align: center;
 	line-height: 1.7;
 	color: #03172a;
 	overflow-x: hidden;
 	letter-spacing: 0.2px;
 	-webkit-transition: all 200ms linear;
 	transition: all 200ms linear; 
-	text-rendering: optimizeLegibility !important;
-	-webkit-font-smoothing: antialiased !important;
-	scroll-behavior: smooth;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
   	
 /* =================== Games =================== */
 
