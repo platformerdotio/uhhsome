@@ -12,6 +12,8 @@
 body{
 	font-family: 'Varela Round';
   background-image: url("/gamepagebackground.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 	font-weight: 500;
 	font-size: 15px;
 	line-height: 1.7;
