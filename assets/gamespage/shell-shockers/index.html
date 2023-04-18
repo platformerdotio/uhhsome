@@ -15,33 +15,34 @@
             </div> <button onclick="iFullscreen()"> <i class="fas fa-expand fa-2x" style="color: #02225d;"></i> </button>
         </div>
     </div>
-    <h1 style="color: #fff; text-align: center;">Popular Games</h1>
-    <iframe style="height: 40vh; width: 100%; border: none; margin: 0; padding: 0;" src="/assets/populargames/" allowfullscreen="" scrolling="no"></iframe>
     <div class="aboutblank" style="text-align:center; color: #fff;>
         
-        <div id="aboutblank">
-          <h1>Open in about:blank Page</h1>
-          <label class="switch">
-            <input type="checkbox">
-            <span onclick="openblankpage()" class="slider round"></span>
-          </label>
-          <script>
-            function openblankpage() {
-              var win = window.open()
-              var url = window.location.href
-              var iframe = win.document.createElement('iframe')
-              iframe.style.width = "100%"
-              iframe.style.height = "100%"
-              iframe.style.border = "none"
-              iframe.style.margin = "0"
-              iframe.style.padding = "0"
-              iframe.src = url
-              win.document.body.appendChild(iframe)
-            }
-          </script>
-          </label>
-        </div>
+      <div id="openaboutblank">
+        <h1>Open in about:blank Page</h1>
+        <label class="switch">
+          <input type="checkbox">
+          <span onclick="openblankpage()" class="slider round"></span>
+        </label>
+        <script>
+          function openblankpage() {
+            var win = window.open()
+            var url = window.location.href
+            var iframe = win.document.createElement('iframe')
+            iframe.style.width = "100%"
+            iframe.style.height = "100%"
+            iframe.style.border = "none"
+            iframe.style.margin = "0"
+            iframe.style.padding = "0"
+            iframe.src = url
+            win.document.body.appendChild(iframe)
+          }
+        </script>
+        </label>
       </div>
+    </div>
+    <h1 style="color: #fff; text-align: center;">Popular Games</h1>
+    <iframe style="height: 40vh; width: 100%; border: none; margin: 0; padding: 0;" src="/assets/populargames/" allowfullscreen="" scrolling="no"></iframe>
+    
 </body>
 <script src="/js/fullscreen.js" type="text/javascript"></script>
 
