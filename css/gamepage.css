@@ -137,6 +137,10 @@ body{
   transition: all .2s ease-in-out; 
 }
 
+.fa-2x :hover {
+  transition: all .2s ease-in-out; 
+}
+
 .game-stuff {
   padding: 50px;
   background-color: #5ff5f5;
