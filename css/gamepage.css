@@ -10,7 +10,7 @@
 }
 body{
 	font-family: 'Varela Round';
-  	background-image: url("/gamebackground.gif");
+  	background-image: url("/gamebackground.png");
   	background-repeat: no-repeat;
   	background-size: cover;
   	background-attachment: fixed;

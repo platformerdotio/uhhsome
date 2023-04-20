@@ -114,6 +114,7 @@ input[type="checkbox"]{
   width: 100%;
   padding: none;
   color: #1b1b1b;
+  margin-top: 120px;
   background: #02225D;
 }
 .content div{
