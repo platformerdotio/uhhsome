@@ -42,11 +42,6 @@ body{
   margin: 0 5%;
 }
 
-.content {
-  justify-content: center;
-  grid-template-columns: 1fr 1fr;
-}
-
 .content-container{
   display: flex;
   flex-direction: column;
