@@ -102,13 +102,13 @@ body{
 
 .bar h1{
   font-size: 20px;
-  background: #5ff5f5;
+  background: #fff;
 }
 
 #content-creator {
   font-size: 14px;
   font-weight: 600;
-  background: #5ff5f5;
+  background: #fff;
 }
 
 #content-desc {
@@ -127,12 +127,7 @@ body{
   border-top-right-radius: 20px;
 }
 
-.fa-2x {
-  background: #5ff5f5;
-  transition: all .2s ease-in-out; 
-}
-
-.fa-2x :hover {
+.expand :hover {
   transition: all .2s ease-in-out; 
 }
 
