@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Varela%20Round:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Figtree:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 :root{
 	--proformer: #fff;
 }
@@ -9,9 +9,9 @@
   box-sizing: border-box;
 }
 body{
-	font-family: 'Varela Round';
+	font-family: 'Figtree';
   background: #02051f;
-	font-weight: 500;
+	font-weight: 400;
 	font-size: 15px;
 	line-height: 1.7;
 	color: #02051f;
@@ -77,8 +77,9 @@ body{
   align-items: center;
   background-color: var(--proformer);
   padding: 0.2rem 2rem 0.75rem;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-weight: 400;
 }
 
 .bar > button{
@@ -107,7 +108,7 @@ body{
 
 #content-creator {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   background: #fff;
 }
 
