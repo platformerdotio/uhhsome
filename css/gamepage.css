@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Varela%20Round:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 :root{
-	--proformer: #5ff5f5;
+	--proformer: #fff;
 }
 
 * {
@@ -14,7 +14,7 @@ body{
 	font-weight: 500;
 	font-size: 15px;
 	line-height: 1.7;
-	color: #02225d;
+	color: #02051f;
 	overflow-x: hidden;
 	letter-spacing: 0.2px;
 	-webkit-transition: all 200ms linear;
