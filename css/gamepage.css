@@ -95,10 +95,16 @@ body{
   justify-content: center;
 }
 
-.bar-left{
+.content-container .bar .bar-left{
   display: flex;
   flex-direction: column;
+  width: 50%;
   justify-content: center;
+}
+
+.content-container .bar .bar-right{
+  display: flex;
+  width: 50%;
 }
 
 .bar h1{
