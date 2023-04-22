@@ -3,6 +3,6 @@
  Recipe:: default
 
 
- ban('ip ban') do
+ ban('ban name') do
    ip "192.168.0.182"
  end
