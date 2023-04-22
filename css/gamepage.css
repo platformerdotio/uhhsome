@@ -132,7 +132,7 @@ body{
   transition: transform .5s ease;
 }
 .expand:hover {
-  transform: scale(1.2) rotate(8deg); 
+  transform: scale(1.2) rotate(-8deg); 
 
 }
 
