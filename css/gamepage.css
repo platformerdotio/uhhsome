@@ -125,6 +125,7 @@ body{
 .gameframe {
   height: 80vh;
   border: 3px solid #fff;
+  overflow: scroll;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
