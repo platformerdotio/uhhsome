@@ -114,7 +114,6 @@ body{
   @media all and (max-width: 812px) {
     .filter-item img {
       height: 80px;
-      width: 80px;
     }
   }
 
