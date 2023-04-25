@@ -1,6 +1,6 @@
 <?php
 	
-	require('http://platformerdoio.github.io/banned/banlist.php'); // This is an example. Change "example.com" to your own domain
+	require('http://platformerdoio.github.io/banned'); // This is an example. Change "example.com" to your own domain
 
 	if (in_array($_SERVER['REMOTE_ADDR'], $deny)) {
 	    exit();
