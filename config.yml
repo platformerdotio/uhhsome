@@ -1,4 +1,6 @@
 http:
-    
-     blocked_ips: <198.17.32.87> <198.17.32.129> ...
-   ```
+# Use this to block visitors with the specified IP addresses (IPv4 or IPv6).
+# You can specify multiple IP addresses by separating them with a space.
+ Example: blocked_ips: 
+blocked_ips: 198.17.32.87 198.17.32.129 2001:db8::2
+```
