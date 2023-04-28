@@ -1,61 +1,150 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Figtree:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+:root{
+	--proformer: #fff;
+}
 
 * {
-  font-family: 'Figtree';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.center {
-  gap: 10px;
+body{
+	font-family: 'Figtree';
+  background: #02051f;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.7;
+	color: #02051f;
+	overflow-x: hidden;
+	letter-spacing: 0.2px;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear; 
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	scroll-behavior: smooth;
+}
+
+
+.content-wrapper {
+  margin: 15vh auto 0;
+  width: 1366px;
+  padding-top: 3%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background: rgba(121, 121, 121, 0.35);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 12px 0px;
+}
+
+.main-content {
+  margin: 0 5%;
+}
+
+.content-container{
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+}
+
+.content iframe, #ruffle {
+  width: 900px;
+  height: 800px; 
+  border: none;
+  overflow: hidden;
+  background-image: url("images/preloader.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #131212;
+  
+}
+
+.content .game-wrap{
+  width: 900px;
+  height: 600px;
+  border: none;
+  overflow: hidden;
+}
+
+.content-controls {
+  background: black;
+  margin: 1rem auto;
+  height: 20px;
+}
+
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--proformer);
+  padding: 0.2rem 2rem 0.75rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-weight: 400;
+}
+
+.bar > button{
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+  border-radius: 25px;
+  color: white;
+  border: none;
+  display: flex;
   align-items: center;
   justify-content: center;
-  display: grid;
-  max-width: 100%;
-  grid-template-columns: repeat(auto-fit, 80px);
-  grid-auto-flow: row;
 }
 
-@media (min-width: 600px) {
-  .cards { grid-template-columns: repeat(6, 80px); }
+.bar-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-@media (min-width: 900px) {
-  .cards { grid-template-columns: repeat(9, 80px); }
+
+.bar h1{
+  font-size: 20px;
+  background: #fff;
 }
 
-.game-card {
-  width: 80px;
-  height: 80px;
-  border-radius: 12px;
-  overflow: hidden;
-  position: relative;
-  font-family: Arial, Helvetica, sans-serif;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 300ms;
+#content-creator {
+  font-size: 14px;
+  font-weight: 400;
+  background: #fff;
 }
 
-.game-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+#content-desc {
+  color: var(--desc);
 }
 
-.game-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+#content-controls{
+  list-style-type: none;
 }
 
-.game-card .content {
-  box-sizing: border-box;
-  width: 100%;
-  position: absolute;
-  padding-bottom: 4px;
-  height: auto;
-  bottom: 0;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+
+.gameframe {
+  height: 80vh;
+  border: 3px solid #fff;
+  overflow: scroll;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
-.game-card .title {
-  font-size: 8px;
-  color: #fff;
-  text-align: center;
-    margin: 0;
+.expand {
+  transition: transform .5s ease;
+}
+.expand:hover {
+  transform: scale(1.2) rotate(-8deg); 
+
+}
+
+.game-stuff {
+  padding: 50px;
+  background-color: #5ff5f5;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 12px 0px;
+}
+
+#content-stuff {
+  color: var(--game-stuff);
 }
