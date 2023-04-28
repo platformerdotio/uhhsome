@@ -43,7 +43,6 @@ body{
   display: flex;
   flex-direction: column;
   margin: 50px;
-  width: 80vw;
 }
 
 .content iframe, #ruffle {
@@ -78,8 +77,9 @@ body{
   align-items: center;
   background-color: var(--proformer);
   padding: 0.2rem 2rem 0.75rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   font-weight: 400;
-  height: 4vh;
 }
 
 .bar > button{
@@ -87,6 +87,7 @@ body{
   width: 2rem;
   height: 2rem;
   background-color: transparent;
+  border-radius: 25px;
   color: white;
   border: none;
   display: flex;
@@ -122,9 +123,11 @@ body{
 
 
 .gameframe {
-  height: 75vh;
-  border: none;
+  height: 80vh;
+  border: 3px solid #fff;
   overflow: scroll;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .expand {
@@ -145,4 +148,3 @@ body{
 #content-stuff {
   color: var(--game-stuff);
 }
-
