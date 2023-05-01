@@ -77,23 +77,9 @@ body{
   align-items: center;
   background-color: var(--proformer);
   padding: 0.2rem 2rem 0.75rem;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
   font-weight: 400;
 }
 
-.bar > button{
-  cursor: pointer;
-  width: 2rem;
-  height: 2rem;
-  background-color: transparent;
-  border-radius: 25px;
-  color: white;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .bar-left{
   display: flex;
@@ -126,8 +112,6 @@ body{
   height: 80vh;
   border: 3px solid #fff;
   overflow: scroll;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
 }
 
 .expand {
