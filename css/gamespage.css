@@ -55,9 +55,9 @@ body {
   color: #fff;
   text-align: center;
   margin: 0;
-  visibility: hidden;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
-.game-card .title:hover {
-  visibility: visible;
-}
+
