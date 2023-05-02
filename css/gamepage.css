@@ -114,17 +114,16 @@ body{
   overflow: scroll;
 }
 
-.expand {
+
+
+.expand .expand-image {
   transition: transform .5s ease;
   border: none;
   cursor: pointer;
 }
-.expand:hover {
-  transform: scale(1.2); 
-}
 
-.expand .expand-image {
-  padding: 5px;
+.expand .expand-image:hover {
+  transform: scale(1.2); 
 }
 
 .game-stuff {
