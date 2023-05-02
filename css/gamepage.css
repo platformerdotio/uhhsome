@@ -115,14 +115,13 @@ body{
 }
 
 
-
-.expand .expand-image {
+.expand-image {
   transition: transform .5s ease;
   border: none;
   cursor: pointer;
 }
 
-.expand .expand-image:hover {
+.expand-image:hover {
   transform: scale(1.2); 
 }
 
