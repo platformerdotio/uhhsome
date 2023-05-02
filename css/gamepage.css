@@ -114,7 +114,10 @@ body{
   overflow: scroll;
 }
 
-
+.expand {
+  border: none;
+  background: #fff;
+}
 .expand-image {
   transition: transform .5s ease;
   border: none;
