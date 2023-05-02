@@ -122,7 +122,7 @@ body{
   background: #0762b8;
 }
 .expand:hover {
-  transform: scale(0.8); 
+  transform: scale(1.2); 
 }
 
 .expand .expand-image {
