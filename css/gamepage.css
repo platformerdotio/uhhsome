@@ -118,8 +118,6 @@ body{
   transition: transform .5s ease;
   border: none;
   cursor: pointer;
-  border-radius: 50%;
-  background: #0762b8;
 }
 .expand:hover {
   transform: scale(1.2); 
