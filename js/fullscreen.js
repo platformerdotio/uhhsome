@@ -10,7 +10,7 @@ const reqFs = (elem) => {
   }
 };
 
-const iFullscreen = () => {
+const fullscreen = () => {
   const elem = document.getElementsByTagName("iframe")[0];
   reqFs(elem);
 };
