@@ -4,6 +4,11 @@
   font-family: 'Figtree';
 }
 
+h1 {
+  font-size: "50px";
+  text-align: center;
+}
+
 body {
   background: #03172a;
 }
