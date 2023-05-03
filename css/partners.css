@@ -1,18 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=DM%20Sans|Figtree');
+@import url('https://fonts.googleapis.com/css?family=Figtree');
 
 
 h1 {
   font-size: "50px";
   text-align: center;
   color: #fff;
-  font-family: 'DM Sans';
 }
 
 body {
   background: #03172a;
+  font-family: 'Figtree';
 }
 .center {
-  font-family: 'Figtree';
   gap: 10px;
   align-items: center;
   justify-content: center;
@@ -25,8 +24,8 @@ body {
 
 
 .partner-card {
-  width: 200px;
-  height: 200dsapx;
+  width: 300px;
+  height: 300px;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
