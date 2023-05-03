@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Figtree');
+@import url('https://fonts.googleapis.com/css?family=DM%20Sans');
 
 
 h1 {
@@ -9,7 +9,7 @@ h1 {
 
 body {
   background: #03172a;
-  font-family: 'Figtree';
+  font-family: 'DM Sans';
 }
 .center {
   gap: 10px;
