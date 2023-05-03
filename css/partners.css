@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
+@import url('https://fonts.googleapis.com/css?family=DM%20Sans|Figtree');
 
 * {
   font-family: 'Figtree';
@@ -8,6 +8,7 @@ h1 {
   font-size: "50px";
   text-align: center;
   color: #fff;
+  font-family: 'DM Sans';
 }
 
 body {
