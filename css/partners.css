@@ -10,9 +10,9 @@ h1 {
 
 body {
   background: #03172a;
-  font-family: 'Figtree';
 }
 .center {
+  font-family: 'Figtree';
   gap: 10px;
   align-items: center;
   justify-content: center;
