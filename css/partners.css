@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=DM%20Sans|Figtree');
 
-* {
-  font-family: 'Figtree';
-}
 
 h1 {
   font-size: "50px";
@@ -13,6 +10,7 @@ h1 {
 
 body {
   background: #03172a;
+  font-family: 'Figtree';
 }
 .center {
   gap: 10px;
