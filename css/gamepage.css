@@ -25,21 +25,12 @@ body{
 }
 
 
-.content-wrapper {
-  margin: 15vh auto 0;
-  width: 1366px;
-  padding-top: 3%;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  background: rgba(121, 121, 121, 0.35);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 12px 0px;
-}
 
 .main-content {
   margin: 0 5%;
 }
 
-.content-container{
+.gameframe-container{
   display: flex;
   flex-direction: column;
   margin: 50px;
@@ -71,7 +62,7 @@ body{
 }
 
 
-.bar {
+.options {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -81,14 +72,14 @@ body{
 }
 
 
-.bar-left{
+.left{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 
-.bar h1{
+.options h1{
   font-size: 20px;
   background: #fff;
 }
@@ -99,13 +90,6 @@ body{
   background: #fff;
 }
 
-#content-desc {
-  color: var(--desc);
-}
-
-#content-controls{
-  list-style-type: none;
-}
 
 
 .gameframe {
